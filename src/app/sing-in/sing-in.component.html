@@ -1,3 +1,6 @@
-<p>
-  sing-in works!
-</p>
+<h1>Sing Up</h1>
+<form (submit)="onSubmitAddUser()">
+  e-mail: <input type="email" name="email" id="email" [(ngModel)]="email"> <br>
+  password: <input type="password" name="password" id="password" [(ngModel)]="password">
+  <input type="submit" name="" value="enviar">
+</form>
