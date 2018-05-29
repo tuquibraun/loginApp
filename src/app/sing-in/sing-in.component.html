@@ -1,6 +1,17 @@
-<h1>Sing Up</h1>
-<form (submit)="onSubmitAddUser()">
-  e-mail: <input type="email" name="email" id="email" [(ngModel)]="email"> <br>
-  password: <input type="password" name="password" id="password" [(ngModel)]="password">
-  <input type="submit" name="" value="enviar">
-</form>
+<div class="container">
+    <h1>Sing Up</h1>
+    <form (submit)="onSubmitAddUser()">
+      <div class="form-group" >
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" [(ngModel)]="email">
+      </div>
+
+      <div class="form-group">
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" [(ngModel)]="password">
+      </div>
+
+      <button type="submit" class="btn btn-success">Submit</button>
+
+    </form>
+</div>

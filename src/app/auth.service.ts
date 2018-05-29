@@ -2,10 +2,9 @@ import { Injectable } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
 import { map } from "rxjs/operators";
+/*import {Observable} from 'rxjs/Observable';*/
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class AuthService {
 
   constructor(
@@ -30,6 +29,7 @@ export class AuthService {
 
   getAuth(){
     return this.afAuth.authState.pipe(map (auth => {auth}));
+ /*map(auth => auth);*//*pipe(map (auth => {auth}));*/
   }
 
 

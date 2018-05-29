@@ -20,7 +20,7 @@ export class SingInComponent implements OnInit {
   onSubmitAddUser(){
     this.authService.registerUser(this.email, this.password)
     .then( (res) =>{
-      this.router.navigate(['/welcome'])
+      this.router.navigate(['/log-in'])
     }).catch( (err) =>{
       console.log(err);
     });

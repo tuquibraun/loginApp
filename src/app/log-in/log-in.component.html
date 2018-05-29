@@ -1,6 +1,6 @@
 <h1>Log In</h1>
-<form class="" action="index.html" method="post">
-  e-mail: <input type="email"> <br>
-  password: <input type="password" name="" value="">
-  <input type="text" name="" value="enviar">
+<form (submit)="onSubmitLogIn()">
+  e-mail: <input type="email" name="email" id="email" [(ngModel)]="email"> <br>
+  password: <input type="password" name="password" id="password" [(ngModel)]="password">
+  <input type="submit" name="" value="enviar">
 </form>
